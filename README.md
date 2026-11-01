@@ -1,6 +1,6 @@
 # ikira-web
 
-Webseite der App IKIRA unter `ikira.byklug.de`: Vorstellung, Impressum, Datenschutzerklärung und „Konto löschen“ (für Google Play). Kein Teil der App selbst; die App liegt in einem eigenen Repository.
+Webseite der App IKIRA unter `https://www.ikira.byklug.de`: Vorstellung, Impressum, Datenschutzerklärung und „Konto löschen“ (für Google Play). Kein Teil der App selbst; die App liegt in einem eigenen Repository.
 
 ## Aufbau
 
@@ -12,6 +12,7 @@ Schlichtes HTML und CSS in `public/`, ohne Build-Schritt und ohne externe Dateie
 | `public/impressum.html` | `/impressum` |
 | `public/datenschutz.html` | `/datenschutz` |
 | `public/konto-loeschen.html` | `/konto-loeschen` |
+| `public/404.html` | unbekannte Adressen |
 | `public/_headers` | Sicherheits-Header für Cloudflare |
 
 Cloudflare liefert `impressum.html` unter `/impressum` aus.
@@ -23,7 +24,7 @@ Cloudflare Pages baut bei jedem Push auf `main` neu.
 - Projekt: mit dem GitHub-Repository `ikira-official/ikira-web` verbunden
 - Build-Befehl: leer
 - Ausgabeordner: `public`
-- Eigene Domain: `ikira.byklug.de`, bei Hetzner DNS als CNAME auf `<projekt>.pages.dev`
+- Eigene Domain: `www.ikira.byklug.de`, bei Hetzner DNS als CNAME auf `ikira-web.pages.dev`. `ikira.byklug.de` selbst geht nicht: Dort liegt der MX-Eintrag für den Mail-Empfang von Resend, und ein CNAME darf nicht daneben stehen
 
 Lokal ansehen: `npx serve public` oder die HTML-Dateien direkt im Browser öffnen.
 
