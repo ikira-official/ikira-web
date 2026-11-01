@@ -33,9 +33,9 @@ Lokal ansehen: `npx serve public` oder die HTML-Dateien direkt im Browser öffne
 - [ ] Datenschutzerklärung juristisch prüfen lassen
 - [ ] Mit `[prüfen]` markierte Angaben gegen die aktuelle Anbieter-Doku prüfen (Anthropic: Training und Aufbewahrung; Resend: Auftragsverarbeitung und Protokolle; Supabase: Backups)
 - [ ] Auftragsverarbeitungsverträge abschließen bzw. akzeptieren: Supabase, Anthropic, Resend, Cloudflare
-- [ ] Speicherdauer der KI-Protokolle festlegen (App, M11)
+- [x] Speicherdauer der KI-Protokolle festlegen (App, M11): Inhalte nach 30 Tagen leeren
 - [ ] Abschnitt zu Absturzberichten, sobald das Werkzeug feststeht (App, M10)
-- [ ] Menüpfad unter „Konto löschen“ an die Funktion in der App anpassen (App, M11)
+- [x] Menüpfad unter „Konto löschen“ an die Funktion in der App anpassen (App, M11)
 
 Spätestens vor dem öffentlichen Start (App, M21):
 
